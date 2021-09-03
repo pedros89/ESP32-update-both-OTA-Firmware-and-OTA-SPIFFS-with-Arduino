@@ -8,6 +8,12 @@ Load this code on your EPS32 to OTA update ESP32 APP and SPIFFS partition
 - for the process on how to generate SPIFFS images follow this link
 [ESP32-OTA-update-SPIFFS-with-Arduino](https://github.com/pedros89/ESP32-OTA-update-SPIFFS-with-Arduino)
 
+- fill file location
+```
+#define URL_SPIFFS "https://www.example.com/spiffsImage.bin"
+#define FIRMWARE_URL "https://www.example.com/firmwareAppImage.bin"
+```
+
 This piece of code is particularly important, where the config for the HTTPS connection takes place.
 Make sure you format your certificate correctly like you find in the file `CertMeren.h`
 ```
