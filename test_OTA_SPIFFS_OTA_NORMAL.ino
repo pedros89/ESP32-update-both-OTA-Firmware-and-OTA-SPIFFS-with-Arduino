@@ -19,8 +19,8 @@
 #include <WiFiClient.h>
 
 
-#define URL_SPIFFS "https://www.merenel.com/spiffs_thing_plus.bin"
-#define FIRMWARE_URL "https://www.merenel.com/FWA3PAN_NEW_2.0.2.bin"
+#define URL_SPIFFS "https://www.example.com/spiffsImage.bin"
+#define FIRMWARE_URL "https://www.example.com/firmwareAppImage.bin"
 
 #define BUFFSIZE 1024
 #define HASH_LEN 32 /* SHA-256 digest length */
@@ -35,8 +35,8 @@ extern const uint8_t server_cert_pem_end[] asm("_binary_ca_cert_pem_end");
 
 
 void connectWiFI(){
-  const char* ssid = "TEISWLAN";
-  const char* password = "stry+tek-r75";
+  const char* ssid = "YOUR WIFI NETWORK NAME";
+  const char* password = "YOUR WIFI PASSWORD";
   
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
