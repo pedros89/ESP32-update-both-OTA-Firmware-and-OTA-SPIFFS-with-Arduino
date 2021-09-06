@@ -19,8 +19,8 @@
 #include <WiFiClient.h>
 
 
-#define URL_SPIFFS "https://www.example.com/spiffsImage.bin"
-#define FIRMWARE_URL "https://www.example.com/firmwareAppImage.bin"
+char *URL_SPIFFS = "https://www.example.com/spiffsImage.bin";
+char *FIRMWARE_URL = "https://www.example.com/firmwareAppImage.bin";
 
 #define BUFFSIZE 1024
 #define HASH_LEN 32 /* SHA-256 digest length */
