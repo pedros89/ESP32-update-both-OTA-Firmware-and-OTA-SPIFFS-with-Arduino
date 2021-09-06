@@ -16,6 +16,13 @@ https://github.com/espressif/esp-idf/blob/master/examples/system/ota/native_ota_
 #define FIRMWARE_URL "https://www.example.com/firmwareAppImage.bin"
 ```
 
+Instead than use the `#define` that you cannot change you can also use `char` so you can convert them into `String` and change them as are variables. It will work if you put them in this way:
+
+```
+char *URL_SPIFFS = "https://www.example.com/spiffsImage.bin";
+char *FIRMWARE_URL = "https://www.example.com/firmwareAppImage.bin";
+```
+
 This piece of code is particularly important, where the config for the HTTPS connection takes place.
 Make sure you format your certificate correctly like you find in the file `CertMeren.h`
 ```
