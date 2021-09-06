@@ -1,5 +1,7 @@
 # ESP32-update-both-OTA-Firmware-and-OTA-SPIFFS-with-Arduino
-Load this code on your EPS32 to OTA update ESP32 APP and SPIFFS partition
+Load this code on your EPS32 to OTA update ESP32 APP and SPIFFS partition.
+Have a look at IDF OTA native for more info.
+https://github.com/espressif/esp-idf/blob/master/examples/system/ota/native_ota_example/main/native_ota_example.c
 
 - Generate the Bin File. Arduino → sketch → export compiled sketch
 
